@@ -1,0 +1,207 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hexo + Github 博客搭建简略记录 | Hexo</title><meta name="keywords" content="Hexo,Markdown"><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="$\qquad\qquad\qquad$ blog搭建详解 $\qquad\qquad\qquad$ blog搭建详解 相关环境的配置 关联Github的SSH密钥 主题更改与配置 更换或者添加图标 Front-matter 高亮代码 看板娘 页面的MarkDown文章的开头  相关环境的配置 环境配置都是在命令行管理的管理员模式下配置的。   1234npm install -g cnpm --">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo + Github 博客搭建简略记录">
+<meta property="og:url" content="http://example.com/2022/09/16/blog/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="$\qquad\qquad\qquad$ blog搭建详解 $\qquad\qquad\qquad$ blog搭建详解 相关环境的配置 关联Github的SSH密钥 主题更改与配置 更换或者添加图标 Front-matter 高亮代码 看板娘 页面的MarkDown文章的开头  相关环境的配置 环境配置都是在命令行管理的管理员模式下配置的。   1234npm install -g cnpm --">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cloud.miiiku.xyz/src/images/cover/cover-02.jpg-webp%20(%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF)">
+<meta property="article:published_time" content="2022-09-15T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-19T01:33:56.855Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cloud.miiiku.xyz/src/images/cover/cover-02.jpg-webp%20(%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF)"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/09/16/blog/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo + Github 博客搭建简略记录',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-09-19 09:33:56'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cloud.miiiku.xyz/src/images/cover/cover-02.jpg-webp (页面的图片背景)')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Hexo + Github 博客搭建简略记录</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-09-15T16:00:00.000Z" title="Created 2022-09-16 00:00:00">2022-09-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-09-19T01:33:56.855Z" title="Updated 2022-09-19 09:33:56">2022-09-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Hexo/">Hexo</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Hexo + Github 博客搭建简略记录"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="qquad-qquad-qquad-blog搭建详解"><a href="#qquad-qquad-qquad-blog搭建详解" class="headerlink" title="$\qquad\qquad\qquad$ blog搭建详解"></a>$\qquad\qquad\qquad$ blog搭建详解</br></h1><ul>
+<li><a href="#qquadqquadqquad-blog%E6%90%AD%E5%BB%BA%E8%AF%A6%E8%A7%A3br">$\qquad\qquad\qquad$ blog搭建详解</br></a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE">相关环境的配置</a></li>
+<li><a href="#%E5%85%B3%E8%81%94github%E7%9A%84ssh%E5%AF%86%E9%92%A5">关联Github的SSH密钥</a></li>
+<li><a href="#%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9%E4%B8%8E%E9%85%8D%E7%BD%AE">主题更改与配置</a></li>
+<li><a href="#%E6%9B%B4%E6%8D%A2%E6%88%96%E8%80%85%E6%B7%BB%E5%8A%A0%E5%9B%BE%E6%A0%87">更换或者添加图标</a></li>
+<li><a href="#front-matter">Front-matter</a></li>
+<li><a href="#%E9%AB%98%E4%BA%AE%E4%BB%A3%E7%A0%81">高亮代码</a></li>
+<li><a href="#%E7%9C%8B%E6%9D%BF%E5%A8%98">看板娘</a></li>
+<li><a href="#%E9%A1%B5%E9%9D%A2%E7%9A%84markdown%E6%96%87%E7%AB%A0%E7%9A%84%E5%BC%80%E5%A4%B4">页面的MarkDown文章的开头</a></li>
+</ul>
+<h1 id="相关环境的配置"><a href="#相关环境的配置" class="headerlink" title="相关环境的配置"></a>相关环境的配置</h1><font face="微软雅黑" size=3 color=#F08080 >
+环境配置都是在命令行管理的管理员模式下配置的。
+</font>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https:<span class="comment">//registry.npm.taobao.org</span></span><br><span class="line">cnpm -v</span><br><span class="line">cnpm install -g hexo-cli</span><br><span class="line">cnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://conanmusk-blog-image.oss-cn-nanjing.aliyuncs.com/img/202209190918515.png" alt="hexo-cli"></p>
+<p><img src="https://conanmusk-blog-image.oss-cn-nanjing.aliyuncs.com/img/202209190929643.jpg" alt="hexo init"></p>
+<h1 id="关联Github的SSH密钥"><a href="#关联Github的SSH密钥" class="headerlink" title="关联Github的SSH密钥"></a>关联Github的SSH密钥</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;你的邮箱地址&quot;</span></span><br></pre></td></tr></table></figure>
+<font face="微软雅黑" size=3 color=#F08080 >
+在博客目录下，通过git bush，得到SSH密钥，一般其地址都默认在C:\Users\Dell\.ssh。将其中的密钥粘贴至Github。
+</font>
+
+<p><img src="https://conanmusk-blog-image.oss-cn-nanjing.aliyuncs.com/img/202209190929870.png" alt="SSH"></p>
+<font face="微软雅黑" size=3 color=#F08080 >
+在此过程中可能会设置密码(passphrase),我设置为了200124.
+</font>
+
+<p><a target="_blank" rel="noopener" href="https://conanmusk.github.io/">博客地址</a></p>
+<font face="微软雅黑" size=3 color=#F08080 >
+C:\Users\Dell\.ssh，在以上目录使用命令行或者git bush 验证是否连上github。
+</font>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<h1 id="主题更改与配置"><a href="#主题更改与配置" class="headerlink" title="主题更改与配置"></a>主题更改与配置</h1><p><a target="_blank" rel="noopener" href="https://github.com/miiiku/flex-block">我使用的主题下载地址</a></p>
+<p><img src="https://conanmusk-blog-image.oss-cn-nanjing.aliyuncs.com/img/202209190929878.png" alt="在此处修改为你想要使用的那个主题的文件包"></p>
+<font face="微软雅黑" size=3 color=#F08080 >
+在hexo文件的_config.yml文件中，按照上图修改主题名称。做好上面的一切之后，便有了一个功能完备但是不太美观的博客。
+</font>
+
+<h1 id="更换或者添加图标"><a href="#更换或者添加图标" class="headerlink" title="更换或者添加图标"></a>更换或者添加图标</h1><font face="微软雅黑" size=3 color=#F08080 >
+D:\ConanMusk\themes\flex-block\layout\_svg
+
+<p>在该位置能够找到图标的地址，一般是SVG形式的文件。<br></font></p>
+<h1 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h1><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">Hexo官方解释</a></p>
+<p><a target="_blank" rel="noopener" href="https://kyori.xyz/2021/07/081100.html">主题开源者解释使用方法</a></p>
+<h1 id="高亮代码"><a href="#高亮代码" class="headerlink" title="高亮代码"></a>高亮代码</h1><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">line_number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">auto_detect:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">tab_replace:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">theme :</span> <span class="string">atom-one-dark</span></span><br></pre></td></tr></table></figure>
+<font face="微软雅黑" size=3 color=#F08080 >
+在博客目录下的_config.yml文件中修改
+</font>
+
+<h1 id="看板娘"><a href="#看板娘" class="headerlink" title="看板娘"></a>看板娘</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44517301/article/details/106348887?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166333156616800182118517%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=166333156616800182118517&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-106348887-null-null.142%5Ev47%5Econtrol_1,201%5Ev3%5Econtrol_2&utm_term=hexo%E7%9C%8B%E6%9D%BF%E5%A8%98&spm=1018.2226.3001.4187">Live 2D添加</a></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-helper-live2d </span><br><span class="line">cnpm install live2d-widget-model-shizuku(最后面是模型的人物名称，可修改)</span><br></pre></td></tr></table></figure>
+<font face="微软雅黑" size=3 color=#F08080 >
+完成以上下载与安装之后，即可在博客的主——config.yml文件中添加下面的代码。
+</font>
+
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## Live2D看板娘</span></span><br><span class="line"><span class="attr">live2d:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">pluginModelPath:</span> <span class="string">assets/</span></span><br><span class="line">  <span class="attr">model:</span></span><br><span class="line">    <span class="comment">#模板目录，在node_modules里</span></span><br><span class="line">    <span class="attr">use:</span> <span class="string">live2d-widget-model-shizuku</span>  </span><br><span class="line">  <span class="attr">display:</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">right</span></span><br><span class="line">    <span class="attr">width:</span> <span class="number">300</span> </span><br><span class="line">    <span class="attr">height:</span> <span class="number">600</span></span><br><span class="line">  <span class="attr">mobile:</span></span><br><span class="line">    <span class="comment"># 在手机端显示</span></span><br><span class="line">    <span class="attr">show:</span> <span class="literal">false</span>   </span><br><span class="line">  <span class="attr">rect:</span></span><br><span class="line">    <span class="string">opacity:0.7</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="页面的MarkDown文章的开头"><a href="#页面的MarkDown文章的开头" class="headerlink" title="页面的MarkDown文章的开头"></a>页面的MarkDown文章的开头</h1><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">插入图片，音频和视频</span> <span class="string">(文章的名字)</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2021-07-08 10:10:30</span> <span class="string">(时间)</span></span><br><span class="line"><span class="attr">categories:</span> [<span class="string">&#x27;doc&#x27;</span>]       <span class="string">(分类)</span></span><br><span class="line"><span class="attr">tags:</span> [<span class="string">&#x27;doc&#x27;</span>, <span class="string">&#x27;flex-block&#x27;</span>] <span class="string">(标签)</span></span><br><span class="line"><span class="attr">cover:</span> <span class="string">https://cloud.miiiku.xyz/src/images/cover/cover-02.jpg-webp</span> <span class="string">(页面的图片背景)</span></span><br><span class="line"><span class="comment">#(一下的两个设置为false一般)</span></span><br><span class="line"><span class="attr">aplayer:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">dplayer:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="meta"></span></span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/09/16/blog/">http://example.com/2022/09/16/blog/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Hexo/">Hexo</a><a class="post-meta__tags" href="/tags/Markdown/">Markdown</a></div><div class="post_share"><div class="social-share" data-image="https://cloud.miiiku.xyz/src/images/cover/cover-02.jpg-webp (页面的图片背景)" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/09/17/MarkDown%E8%AF%AD%E6%B3%95/"><img class="prev-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">MarkDown语法</div></div></a></div><div class="next-post pull-right"><a href="/2022/09/15/links/"><img class="next-cover" src="https://cloud.miiiku.xyz/src/images/cover/cover-04.jpg-webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">links</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#qquad-qquad-qquad-blog%E6%90%AD%E5%BB%BA%E8%AF%A6%E8%A7%A3"><span class="toc-number">1.</span> <span class="toc-text">$\qquad\qquad\qquad$ blog搭建详解</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">相关环境的配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E8%81%94Github%E7%9A%84SSH%E5%AF%86%E9%92%A5"><span class="toc-number">3.</span> <span class="toc-text">关联Github的SSH密钥</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9%E4%B8%8E%E9%85%8D%E7%BD%AE"><span class="toc-number">4.</span> <span class="toc-text">主题更改与配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9B%B4%E6%8D%A2%E6%88%96%E8%80%85%E6%B7%BB%E5%8A%A0%E5%9B%BE%E6%A0%87"><span class="toc-number">5.</span> <span class="toc-text">更换或者添加图标</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Front-matter"><span class="toc-number">6.</span> <span class="toc-text">Front-matter</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%AB%98%E4%BA%AE%E4%BB%A3%E7%A0%81"><span class="toc-number">7.</span> <span class="toc-text">高亮代码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9C%8B%E6%9D%BF%E5%A8%98"><span class="toc-number">8.</span> <span class="toc-text">看板娘</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E7%9A%84MarkDown%E6%96%87%E7%AB%A0%E7%9A%84%E5%BC%80%E5%A4%B4"><span class="toc-number">9.</span> <span class="toc-text">页面的MarkDown文章的开头</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/09/29/hello-world/" title="Hello World"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/09/29/hello-world/" title="Hello World">Hello World</a><time datetime="2022-09-29T03:14:36.825Z" title="Created 2022-09-29 11:14:36">2022-09-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/17/MarkDown%E8%AF%AD%E6%B3%95/" title="MarkDown语法"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MarkDown语法"/></a><div class="content"><a class="title" href="/2022/09/17/MarkDown%E8%AF%AD%E6%B3%95/" title="MarkDown语法">MarkDown语法</a><time datetime="2022-09-16T16:00:00.000Z" title="Created 2022-09-17 00:00:00">2022-09-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/16/blog/" title="Hexo + Github 博客搭建简略记录"><img src="https://cloud.miiiku.xyz/src/images/cover/cover-02.jpg-webp (页面的图片背景)" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo + Github 博客搭建简略记录"/></a><div class="content"><a class="title" href="/2022/09/16/blog/" title="Hexo + Github 博客搭建简略记录">Hexo + Github 博客搭建简略记录</a><time datetime="2022-09-15T16:00:00.000Z" title="Created 2022-09-16 00:00:00">2022-09-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/15/links/" title="links"><img src="https://cloud.miiiku.xyz/src/images/cover/cover-04.jpg-webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="links"/></a><div class="content"><a class="title" href="/2022/09/15/links/" title="links">links</a><time datetime="2022-09-15T08:11:58.000Z" title="Created 2022-09-15 16:11:58">2022-09-15</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
