@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-30T12:29:33.556Z</updated>
+  <updated>2022-09-30T15:41:11.383Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>latex语法记录</title>
+    <link href="http://example.com/2022/09/30/latex%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/"/>
+    <id>http://example.com/2022/09/30/latex%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/</id>
+    <published>2022-09-30T14:36:38.000Z</published>
+    <updated>2022-09-30T15:41:11.383Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\section</span>&#123;该部分的名称&#125; //其后可以接 /label&#123;&#125;</span><br></pre></td></tr></table></figure><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\cite</span>&#123;&#125;</span><br></pre></td></tr></table></figure><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\textsl</span>&#123;et al.&#125;</span><br></pre></td></tr></table></figure><font face="微软雅黑" size=3 color=#F08080 >latex的图片使用方法。</font><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">    <span class="keyword">\begin</span>&#123;figure&#125;[pt]</span><br><span class="line"><span class="keyword">\centering</span></span><br><span class="line"><span class="keyword">\setlength</span>&#123;<span class="keyword">\abovecaptionskip</span>&#125;&#123;0.5cm&#125;</span><br><span class="line"><span class="keyword">\setlength</span>&#123;<span class="keyword">\belowcaptionskip</span>&#125;&#123;0cm&#125;</span><br><span class="line"><span class="keyword">\includegraphics</span>[width=12.5cm]&#123;Figure1.png&#125;</span><br><span class="line"><span class="keyword">\caption</span>&#123;SPAD-based pulsed LiDAR imaging system mainly includes a transmitting and receiving optical system, a pulsed laser, a single-photon avalanche diode <span class="keyword">\cite</span>&#123;t7&#125;, a time-correlated single-photon counter (TCSPC) and scanning mirror. The receiving optical system collects the diffuse reflected echo photons from the pulsed laser irradiating the target and couples them to the SPAD. The moments of the transmitted and received signals are recorded by the TCSPC module.&#125;</span><br><span class="line"><span class="keyword">\label</span>&#123;figure1&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;figure&#125;</span><br></pre></td></tr></table></figure><font face="微软雅黑" size=3 color=#F08080 >其中的\caption{},中的内容是对图片的描述语言。<p>\lable{}中的内容是该图片在后面进行引用的标志。<br></font></p><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Fig. <span class="keyword">\ref</span>&#123;figure1&#125; //引用图片</span><br></pre></td></tr></table></figure><font face="微软雅黑" size=3 color=#F08080 >\ref{},其中的，就是lable的内容，比如\ref{figure1}</font>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight latex&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span cla</summary>
+      
+    
+    
+    
+    <category term="latex" scheme="http://example.com/categories/latex/"/>
+    
+    
+    <category term="latex" scheme="http://example.com/tags/latex/"/>
+    
+  </entry>
   
   <entry>
     <title>Github上传本地到github仓库</title>

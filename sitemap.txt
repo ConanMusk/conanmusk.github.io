@@ -1,3 +1,4 @@
+http://example.com/2022/09/30/latex%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/
 http://example.com/2022/09/30/github/
 http://example.com/2022/09/17/MarkDown%E8%AF%AD%E6%B3%95/
 http://example.com/2021/07/07/STM32Code/
@@ -10,14 +11,16 @@ http://example.com/categories/index.html
 http://example.com/tags/index.html
 http://example.com/2022/09/15/links/
 http://example.com/
-http://example.com/tags/Hexo/
-http://example.com/tags/Markdown/
 http://example.com/tags/stm32/
 http://example.com/tags/github/
+http://example.com/tags/Hexo/
+http://example.com/tags/Markdown/
+http://example.com/tags/latex/
 http://example.com/tags/MarkDown/
 http://example.com/tags/Hal%E5%BA%93/
-http://example.com/categories/Hexo/
 http://example.com/categories/stm32/
 http://example.com/categories/github/
+http://example.com/categories/Hexo/
+http://example.com/categories/latex/
 http://example.com/categories/MarkDown/
 http://example.com/categories/STM32/
