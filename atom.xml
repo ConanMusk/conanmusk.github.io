@@ -150,9 +150,9 @@
     <link href="http://example.com/2022/09/30/github/"/>
     <id>http://example.com/2022/09/30/github/</id>
     <published>2022-09-30T12:10:40.000Z</published>
-    <updated>2022-10-01T07:04:51.486Z</updated>
+    <updated>2022-10-09T15:12:03.121Z</updated>
     
-    <content type="html"><![CDATA[<font face="微软雅黑" size=3 color=#F08080 >在此之前先建立仓库，公开仓库。</font><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add --all</span><br><span class="line">git commit on &quot;描述&quot;</span><br><span class="line"> git remote add origin git@github.com:ConanMusk/STM32_F103ZET6_CUBEMAX.git</span><br><span class="line">git push -u origin master //分支名字</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<font face="微软雅黑" size=3 color=#F08080 >在此之前先建立仓库，公开仓库。</font><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add --all</span><br><span class="line">git commit -m &quot;描述&quot;</span><br><span class="line">git remote add origin git@github.com:ConanMusk/STM32_F103ZET6_CUBEMAX.git</span><br><span class="line">git push -u origin master //分支名字</span><br></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/weixin_37438128/article/details/118487040">Github上传项目</a></p>]]></content>
     
     
       
