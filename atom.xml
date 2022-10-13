@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-04T03:37:18.135Z</updated>
+  <updated>2022-10-13T16:00:14.744Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,84 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DeepBoosting</title>
+    <link href="http://example.com/2022/10/13/DeepBoosting/"/>
+    <id>http://example.com/2022/10/13/DeepBoosting/</id>
+    <published>2022-10-13T15:42:30.000Z</published>
+    <updated>2022-10-13T16:00:14.744Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Deep-Boosting-for-Image-Denoising"><a href="#Deep-Boosting-for-Image-Denoising" class="headerlink" title="Deep Boosting for Image Denoising"></a>Deep Boosting for Image Denoising</h1><font face="微软雅黑" size=3 color=#9932CC > 期刊：ECCV <br>发表时间：2020 <br>单位：中国科学技术大学熊志文团队</font><br><br><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><font face="微软雅黑" size=3 color=#FFFACD > 引入稠密连接的思想，克服训练过程的梯度消失，提出扩展卷积相结合的路径拓宽融合方案，得到了一个轻量高效的卷积网络。</font><br><br><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><font face="微软雅黑" size=3 color=#FFFACD > 1、引入拓展融合机制，能够使得训练过程收敛的更快。</font>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Deep-Boosting-for-Image-Denoising&quot;&gt;&lt;a href=&quot;#Deep-Boosting-for-Image-Denoising&quot; class=&quot;headerlink&quot; title=&quot;Deep Boosting for Image De</summary>
+      
+    
+    
+    
+    <category term="论文阅读" scheme="http://example.com/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="图像去噪" scheme="http://example.com/tags/%E5%9B%BE%E5%83%8F%E5%8E%BB%E5%99%AA/"/>
+    
+    <category term="机器学习" scheme="http://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Real-World Image Denoising with Deep Boosting</title>
+    <link href="http://example.com/2022/10/13/DDFN/"/>
+    <id>http://example.com/2022/10/13/DDFN/</id>
+    <published>2022-10-13T07:23:35.000Z</published>
+    <updated>2022-10-13T16:00:13.216Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Real-World-Image-Denoising-with-Deep-Boosting"><a href="#Real-World-Image-Denoising-with-Deep-Boosting" class="headerlink" title="Real-World Image Denoising with Deep Boosting"></a>Real-World Image Denoising with Deep Boosting</h1><font face="微软雅黑" size=3 color=#9932CC > 期刊： <br>(TPAMI) IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE  <br>发表时间：2020 <br>单位：中国科学技术大学熊志文团队</font><br><br><p><a href="https://github.com/ngchc/deepBoosting">代码开源地址</a></p><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><font face="微软雅黑" size=3 color=#FFFACD > 1、提出了DeepBoosting框架，设计了密集扩展融合网络(DDFN)作为每次级联的Boosting单元，以此组合成DDFN网络，解决了训练过程中的由于网络级联而导致的梯度消失问题，同时提高了有限参数的效率。 <br>2、主要解决的任务方向：盲高斯去噪；主要面向的研究领域是图像的实际去噪。</font><br><br><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><font face="微软雅黑" size=3 color=#FFFACD > 1、Boosting算法通过提取残差信号或者消除噪声残差，以迭代的方式提高恢复质量。 <br>2、灵感来源于密集连接网络论文，这样能够提高特征的重用性，保证了效率。 <br>3、扩展卷积增大了感受野，保持了boosting单元模块的简洁结构。 <br>4、扩展卷积相结合的路径加宽融合方案，提高效率。</font><p><img src="https://conanmusk-blog-image.oss-cn-nanjing.aliyuncs.com/img/202210132331714.png" alt="DDFN"></p><h2 id="Path-Widening-Fusion"><a href="#Path-Widening-Fusion" class="headerlink" title="Path-Widening Fusion"></a>Path-Widening Fusion</h2><font face="微软雅黑" size=3 color=#FFFACD > 1、正常卷积与扩展卷积能够学习不同的特征表示，路径融合利用了这两者的潜力。</font>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Real-World-Image-Denoising-with-Deep-Boosting&quot;&gt;&lt;a href=&quot;#Real-World-Image-Denoising-with-Deep-Boosting&quot; class=&quot;headerlink&quot; title=&quot;Re</summary>
+      
+    
+    
+    
+    <category term="论文阅读" scheme="http://example.com/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="图像去噪" scheme="http://example.com/tags/%E5%9B%BE%E5%83%8F%E5%8E%BB%E5%99%AA/"/>
+    
+    <category term="机器学习" scheme="http://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>单光子成像底层系统理解</title>
+    <link href="http://example.com/2022/10/11/%E5%8D%95%E5%85%89%E5%AD%90%E6%88%90%E5%83%8F%E5%BA%95%E5%B1%82%E7%B3%BB%E7%BB%9F%E7%90%86%E8%A7%A3/"/>
+    <id>http://example.com/2022/10/11/%E5%8D%95%E5%85%89%E5%AD%90%E6%88%90%E5%83%8F%E5%BA%95%E5%B1%82%E7%B3%BB%E7%BB%9F%E7%90%86%E8%A7%A3/</id>
+    <published>2022-10-11T15:12:09.000Z</published>
+    <updated>2022-10-11T15:29:35.670Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;font face=<span class="string">&quot;微软雅黑&quot;</span> size=<span class="number">3</span> color=#<span class="variable constant_">FFFACD</span> &gt;</span><br><span class="line">修改scaffolds的post文件。</span><br><span class="line">&lt;/font&gt;</span><br></pre></td></tr></table></figure><h1 id="单光子激光雷达底层系统公式理解"><a href="#单光子激光雷达底层系统公式理解" class="headerlink" title="单光子激光雷达底层系统公式理解"></a>单光子激光雷达底层系统公式理解</h1><h2 id="文章—基于Gm-APD的成像激光雷达目标探测特性"><a href="#文章—基于Gm-APD的成像激光雷达目标探测特性" class="headerlink" title="文章—基于Gm-APD的成像激光雷达目标探测特性"></a>文章—基于Gm-APD的成像激光雷达目标探测特性</h2><p><img src="https://conanmusk-blog-image.oss-cn-nanjing.aliyuncs.com/img/202210112327396.png" alt="距离门"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</summary>
+      
+    
+    
+    
+    <category term="Hexo" scheme="http://example.com/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows实用命令行</title>
@@ -66,15 +144,30 @@
   </entry>
   
   <entry>
-    <title>nonlocal.md</title>
+    <title>nonlocal</title>
     <link href="http://example.com/2022/10/02/nonlocal/"/>
     <id>http://example.com/2022/10/02/nonlocal/</id>
     <published>2022-10-02T10:54:35.000Z</published>
-    <updated>2022-10-04T03:38:24.805Z</updated>
+    <updated>2022-10-13T16:00:16.098Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Photon-Efficient-3D-Imaging-with-A-Non-Local-Neural-Network"><a href="#Photon-Efficient-3D-Imaging-with-A-Non-Local-Neural-Network" class="headerlink" title="Photon-Efficient 3D Imaging with A Non-Local Neural Network"></a>Photon-Efficient 3D Imaging with A Non-Local Neural Network</h1><font face="微软雅黑" size=3 color=#9932CC > 期刊：ECCV2020 <br>发表时间：2020 <br>单位：中国科学技术大学徐飞虎团队</font><p><a href="https://github.com/JiayongO-O/PENonLocal.git">代码开源地址</a><br><br><a href="#photon-efficient-3d-imaging-with-a-non-local-neural-network">Photon-Efficient 3D Imaging with A Non-Local Neural Network</a></p><ul><li><a href="#abstract">Abstract</a></li><li><a href="#introduction">Introduction</a></li><li><a href="#relate-work-">Relate work <br></a><ul><li><a href="#image-denoising-and-non-local-mechanism">Image denoising and non-local mechanism</a></li></ul></li></ul><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><font face="微软雅黑" size=3 color=#FFFACD > 分析了测量数值在空间和时间两个维度上的长程相关性，提出了利用长程相关性进行深度重建的非局部神经网络，实现了强噪声环境下的单光子三维重建，SBR达到了1：100。</font><br><br><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><font face="微软雅黑" size=3 color=#FFFACD > 1、随着光子数以及SBR的减少，传统的统计直方图技术性能下降。 <br>2、Lindell等人首次将深度学习技术引入单光子三维重建领域，并使用传感器融合技术，利用高分辨率的强度图信息来辅助深度信息的重建。 <br>3、Lindell等人所提出来的网络缺乏专门的设计来处理大量的稀疏数据，这使得其与Rapp等人提出的非机器学习的算法相比，没有竞争力。</font><font face = "微软雅黑" size =3 color = #FFFACD> <br>4、本文提出端到端的深度学习方法，使用Nonlocal算子，以利用空间与时间维度之间的长程相关性。 <br>5、在特征的时间维度上进行了后续的下采样，这样进一步扩大了主干网络的接收场来提高重建性能。</font><br><br><h2 id="Relate-work"><a href="#Relate-work" class="headerlink" title="Relate work "></a>Relate work <br></h2><h3 id="Image-denoising-and-non-local-mechanism"><a href="#Image-denoising-and-non-local-mechanism" class="headerlink" title="Image denoising and non-local mechanism"></a>Image denoising and non-local mechanism</h3><font face = "微软雅黑" size =3 color =#FFFACD> 1、非局部长程相关性启发与BM3D算法，该方法以全局方式搜索相似的斑块，以利用整个图像中的非局部相关性。 2、与普通的图像与视频不同，光电测量的SPAD三维体积大，时间维度稀疏，且容易受到严重的噪声污染。 3、首次使用非局部神经网络挖掘空间和时间维度的长程相关性。</font> ]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Photon-Efficient-3D-Imaging-with-A-Non-Local-Neural-Network&quot;&gt;&lt;a href=&quot;#Photon-Efficient-3D-Imaging-with-A-Non-Local-Neural-Network&quot; </summary>
+      
     
     
     
+    <category term="论文阅读" scheme="http://example.com/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
     
+    
+    <category term="图像去噪" scheme="http://example.com/tags/%E5%9B%BE%E5%83%8F%E5%8E%BB%E5%99%AA/"/>
+    
+    <category term="机器学习" scheme="http://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="单光子" scheme="http://example.com/tags/%E5%8D%95%E5%85%89%E5%AD%90/"/>
     
   </entry>
   
